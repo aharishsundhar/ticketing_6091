@@ -13,4 +13,7 @@ export class PlantravelService {
         private http: HttpClient,
     ) { }
 
+    GpCreate(travel): Observable<any> {
+        return this.http.post(this.sharedService.DESKTOP_API + '/travel', travel);
+    }
 }

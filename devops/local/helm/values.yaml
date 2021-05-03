@@ -54,8 +54,8 @@ service:
   ticketing: 
     name: ticketing
     type: NodePort
-    port: 8007
-    targetPort: 8007
+    port: 8009
+    targetPort: 8009
 
 
 deployment:

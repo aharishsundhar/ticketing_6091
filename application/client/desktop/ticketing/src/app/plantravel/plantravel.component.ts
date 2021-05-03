@@ -21,4 +21,15 @@ export class PlantravelComponent implements OnInit {
 
     ngOnInit() {
     }
+    GpCreate() {
+        this.plantravelService.GpCreate(this.travel).subscribe(data => {
+            this.travel.name = ''
+ 	 	this.travel.age = ''
+ 	 	this.travel.email = ''
+ 	 	this.travel.phone = ''
+        },
+        error => {
+            console.log('Error', error);
+        });
+    }
 }
